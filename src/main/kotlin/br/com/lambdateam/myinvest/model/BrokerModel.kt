@@ -8,7 +8,8 @@ data class BrokerModel(
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long? = null,
+    var id: Long? = null,
+
     @Column(name = "broker", length = 60)
-    val broker: String
+    var broker: String
 )

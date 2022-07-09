@@ -5,16 +5,21 @@ import java.time.Month
 import javax.persistence.*
 
 @Entity
-@Table(name = "users")
+@Table(name = "dividends_calendar")
 data class DividendsCalendar(
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long? = null,
-    @Column(name = "username", length = 60)
-    val month: Month,
-    @Column(name = "email", length = 75)
-    val having: String,
-    @Column(name = "password", length = 256)
-    val earningType: EarningType
+    var id: Long? = null,
+
+    @Column(name = "month")
+    var month: Month,
+
+    @ManyToOne
+    @JoinColumn(name = "stock_id")
+    var stockCode: CompanyModel? = null,
+
+    @Column(name = "type")
+    @Enumerated(EnumType.STRING)
+    var type: EarningType
 )
