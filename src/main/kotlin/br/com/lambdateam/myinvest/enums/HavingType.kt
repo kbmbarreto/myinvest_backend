@@ -1,4 +1,4 @@
-package br.com.lambdateam.myinvest.Enums
+package br.com.lambdateam.myinvest.enums
 
 enum class HavingType {
     STOCKS, REIT

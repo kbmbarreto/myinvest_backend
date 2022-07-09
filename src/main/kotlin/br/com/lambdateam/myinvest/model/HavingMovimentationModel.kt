@@ -1,6 +1,6 @@
 package br.com.lambdateam.myinvest.model
 
-import br.com.lambdateam.myinvest.Enums.HavingType
+import br.com.lambdateam.myinvest.enums.HavingType
 import java.math.BigDecimal
 import java.util.Date
 import javax.persistence.*

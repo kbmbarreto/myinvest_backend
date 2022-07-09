@@ -1,8 +1,6 @@
 package br.com.lambdateam.myinvest.model
 
-import br.com.lambdateam.myinvest.Enums.EarningType
-import org.springframework.validation.Errors
-import org.springframework.web.client.HttpClientErrorException.BadRequest
+import br.com.lambdateam.myinvest.enums.EarningType
 import java.math.BigDecimal
 import java.util.Date
 import javax.persistence.Column

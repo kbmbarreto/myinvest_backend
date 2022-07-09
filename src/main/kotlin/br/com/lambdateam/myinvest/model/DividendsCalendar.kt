@@ -1,6 +1,6 @@
 package br.com.lambdateam.myinvest.model
 
-import br.com.lambdateam.myinvest.Enums.EarningType
+import br.com.lambdateam.myinvest.enums.EarningType
 import java.time.Month
 import javax.persistence.*
 
