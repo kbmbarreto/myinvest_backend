@@ -8,11 +8,11 @@ data class UserModel(
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long? = null,
+    var id: Long? = null,
     @Column(name = "username", length = 60)
-    val userName: String,
+    var userName: String,
     @Column(name = "email", length = 75)
-    val email: String,
+    var email: String,
     @Column(name = "password", length = 256)
-    val password: String
+    var password: String
 )

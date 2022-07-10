@@ -16,4 +16,8 @@ class UserService(private val userRepository: UserRepository) {
     fun createUser(user: UserModel) {
         userRepository.save(user)
     }
+
+    fun update(user: UserModel) {
+        userRepository.save(user)
+    }
 }
