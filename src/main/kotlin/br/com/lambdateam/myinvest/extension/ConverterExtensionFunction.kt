@@ -13,7 +13,6 @@ fun UserModel.toResponse(): UserResponse {
         password = this.password
     )
 }
-
 fun PostUser.toModel(): UserModel {
     return UserModel(
         userName = this.userName,
@@ -21,7 +20,6 @@ fun PostUser.toModel(): UserModel {
         password = this.password
     )
 }
-
 fun PutUser.toUserModel(previousValue: UserModel): UserModel {
     return UserModel(
         id = previousValue.id,
