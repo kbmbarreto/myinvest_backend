@@ -7,5 +7,4 @@ import java.util.Optional
 interface UserRepository: JpaRepository<UserModel, Long> {
 
     override fun findById(id: Long): Optional<UserModel>
-
 }
