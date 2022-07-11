@@ -3,8 +3,6 @@ package br.com.lambdateam.myinvest.controller
 import br.com.lambdateam.myinvest.extension.toModel
 import br.com.lambdateam.myinvest.extension.toResponse
 import br.com.lambdateam.myinvest.extension.toUserModel
-import br.com.lambdateam.myinvest.model.UserModel
-import br.com.lambdateam.myinvest.model.response.PatchUser
 import br.com.lambdateam.myinvest.model.response.PostUser
 import br.com.lambdateam.myinvest.model.response.PutUser
 import br.com.lambdateam.myinvest.model.response.UserResponse
@@ -15,7 +13,6 @@ import org.springframework.http.MediaType
 import org.springframework.stereotype.Service
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PatchMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.PutMapping
