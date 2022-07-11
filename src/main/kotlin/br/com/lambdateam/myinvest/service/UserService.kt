@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service
 class UserService(private val userRepository: UserRepository) {
 
     fun findAll() = userRepository.findAll()
+
     fun findById(id: Long): UserModel {
         return userRepository.findById(id).orElseThrow()
     }
