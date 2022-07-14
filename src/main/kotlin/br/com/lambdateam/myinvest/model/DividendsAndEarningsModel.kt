@@ -44,4 +44,7 @@ data class DividendsAndEarningsModel (
     @Column(name = "value", columnDefinition = "DECIMAL(7,2)")
     var value: BigDecimal,
 
+    @ManyToOne
+    @JoinColumn(name = "id_user")
+    var idUser: UserModel
 )

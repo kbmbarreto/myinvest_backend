@@ -31,17 +31,20 @@ fun PutUser.toUserModel(previousValue: UserModel): UserModel {
 fun BrokerModel.toResponse(): BrokerResponse {
     return BrokerResponse(
         id = this.id,
-        broker = this.broker
+        broker = this.broker,
+        idUser = idUser
     )
 }
 fun PostBroker.toModel(): BrokerModel {
     return BrokerModel(
-        broker = this.broker
+        broker = this.broker,
+        idUser = this.idUser
     )
 }
 fun PutBroker.toBrokerModel(previousValue: BrokerModel): BrokerModel {
     return BrokerModel(
         id = previousValue.id,
-        broker = this.broker
+        broker = this.broker,
+        idUser = this.idUSer
     )
 }
