@@ -42,5 +42,6 @@ data class DividendsAndEarningsModel (
     var companyStockCode: CompanyModel,
 
     @Column(name = "value", columnDefinition = "DECIMAL(7,2)")
-    var value: BigDecimal
+    var value: BigDecimal,
+
 )

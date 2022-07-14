@@ -21,5 +21,9 @@ data class DividendsCalendar(
 
     @Column(name = "type")
     @Enumerated(EnumType.STRING)
-    var type: EarningType
+    var type: EarningType,
+
+    @ManyToOne
+    @JoinColumn(name = "id_user")
+    var idUser: UserModel
 )

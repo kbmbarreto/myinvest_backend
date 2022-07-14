@@ -45,5 +45,9 @@ data class HavingMovimentationModel(
     var costs: BigDecimal,
 
     @Column(name = "net_value", columnDefinition = "DECIMAL(7,2)")
-    var netValue: BigDecimal
+    var netValue: BigDecimal,
+
+    @ManyToOne
+    @JoinColumn(name = "id_user")
+    var idUser: UserModel
 )

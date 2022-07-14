@@ -20,5 +20,9 @@ data class CompanyModel (
     var subSector: String,
 
     @Column(name = "stock_code")
-    var stockCode: String
+    var stockCode: String,
+
+    @ManyToOne
+    @JoinColumn(name = "id_user")
+    var idUser: UserModel
 )

@@ -11,5 +11,9 @@ data class BrokerModel(
     var id: Long? = null,
 
     @Column(name = "broker", length = 60)
-    var broker: String
+    var broker: String,
+
+    @ManyToOne
+    @JoinColumn(name = "id_user")
+    var idUser: UserModel
 )
